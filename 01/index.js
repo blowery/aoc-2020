@@ -17,7 +17,7 @@ reader.on('close', () => {
     let i, j, a, b;
     for (i = 0; i < numbers.length; i++) {
         a = numbers[i];
-        for (j = i; j < numbers.length; j++) {
+        for (j = i+1; j < numbers.length; j++) {
             b = numbers[j];
             if (a + b === 2020) {
                 console.log(a * b);
